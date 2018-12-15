@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>杨宇欣的个人简历</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            background-color: rgb(0,192,180);
+        }
+        .span-major {
+            padding: 2px;
+            border-radius: 3px;
+            font-weight: 900;
+            font-family: "宋体";
+        }
+        .containers {
+            display: flex;
+            background-color: #ffffff;
+            min-width: 1000px;
+            width: 70%;
+            border-radius: 30px;
+            margin: 0 auto;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            box-shadow: 0 8px 15px #888888;
+        }
+        .side-div {
+            background-color: rgb(37,70,101);
+            width: 30%;
+            border-radius: 30px;
+            border-bottom-right-radius: 0;
+            border-top-right-radius: 0;
+            height: 1100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            overflow: hidden;
+        }
+        .side-div img{
+            width: 150px;
+            height: 200px;
+            border-radius: 3px;
+            margin-bottom: -50px;
+        }
+        .side-div .side-message {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            color: rgb(0,192,145);
+        }
+        .side-div .side-message h1 {
+            margin-bottom: 10px;
+        }
+        .side-div .side-message h3 {
+            margin-top:0;
+        }
+        .side-div .side-message .side-skill-text {
+            color: rgb(154,154,154);
+            font-size: 70%;
+            align-self: baseline;
+            margin: 20px 0 0 0;
+        }
+        .side-div .side-message .side-skill-div {
+            color: red;
+            border-radius: 40px;
+            margin: 0 40px;
+            width: 100%;
+            background-color: rgb(215,215,215);
+        }
+        .side-div .side-message .side-skill-div .side-skill-div-html {
+            background-color: rgb(0,192,145);
+            width: 75%;
+            border-radius: 40px;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            animation: html 2s;
+        }
+        .side-div .side-message .side-skill-div .side-skill-div-css {
+            background-color: rgb(0,192,145);
+            width: 70%;
+            border-radius: 40px;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            animation: css 2s;
+        }
+        .side-div .side-message .side-skill-div .side-skill-div-js {
+            background-color: rgb(0,192,145);
+            width: 80%;
+            border-radius: 40px;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            animation: js 2s;
+        }
+        .side-div .side-message .side-skill-div .side-skill-div-vue {
+            background-color: rgb(0,192,145);
+            width: 70%;
+            border-radius: 40px;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            animation: vue 2s;
+        }
+        .side-div .side-message .side-skill-div .side-skill-div-php {
+            background-color: rgb(0,192,145);
+            width: 50%;
+            border-radius: 40px;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            animation: php 2s;
+        }
+        .side-div .side-message .side-message-contact {
+            margin-top: 12px;
+            display: flex;
+            justify-content: flex-start;
+            width: 100%;
+        }
+        .side-div .side-message .side-message-contact .side-message-contact-text {
+            color: #ffffff;
+            font-weight: 800;
+            padding: 0;
+        }
+        .side-div .side-message .side-message-contact p {
+            width: 25px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .center-div {
+            width: 70%;
+            padding: 2% 5% 2% 5%;
+            height: 1100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            font-size: 110%;
+        }
+        .center-div .center-div-introduce {
+            border-top: 2px solid rgb(244,244,244);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .center-div .center-div-introduce .center-div-introduce-title {
+            background: rgb(238,238,238);
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 25px;
+            font-size: 120%;
+            font-weight: 600;
+        }
+        .center-div .center-div-introduce .center-div-introduce-project {
+            background: rgb(238,238,238);
+            border-radius: 5px;
+            border: 2px solid rgb(221,221,221);
+            padding: 10px 15px;
+            width: 100%;
+            margin-bottom: 5px;
+        }
+        .center-div .center-div-introduce .center-div-introduce-project-2 {
+            background: rgb(238,238,238);
+            border-radius: 5px;
+            border: 2px solid rgb(221,221,221);
+            padding: 10px 15px;
+            width: 100%;
+            margin-bottom: 5px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .center-div .center-div-introduce .center-div-introduce-project-title {
+            font-weight: 700;
+        }
+        .center-div .center-div-introduce .center-div-introduce-skill {
+            background: rgb(238,238,238);
+            border-radius: 5px;
+            border: 2px solid rgb(221,221,221);
+            border-top: 1px solid rgb(221,221,221);
+            padding: 0 0;
+            width: 100%;
+            margin-bottom: 5px;
+        }
+        .center-div .center-div-introduce .center-div-introduce-skill p {
+            border-top: 1px solid rgb(221,221,221) ;
+            padding-left: 15px;
+            margin-bottom: 10px;
+            padding-top: 10px;
+        }
+        .center-div .center-div-thank {
+            border-top: 2px solid rgb(244,244,244);
+            font-weight: 900;
+        }
+
+
+        @keyframes html {
+            from {width: 0} to {width: 75%}
+        }
+        @keyframes css {
+            from {width: 0} to {width: 70%}
+        }
+        @keyframes js {
+            from {width: 0} to {width: 80%}
+        }
+        @keyframes vue {
+            from {width: 0} to {width: 70%}
+        }
+        @keyframes php {
+            from {width: 0} to {width: 50%}
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="containers">
+        <aside class="side-div">
+            <img src="img/b.jpg" alt="">
+            <div class="side-message">
+                <h1>杨宇欣</h1>
+                <h3>Web前端开发工程师</h3>
+                <p class="side-skill-text">HTML</p>
+                <div class="side-skill-div"><div class="side-skill-div-html">&nbsp;</div></div>
+                <p class="side-skill-text">CSS</p>
+                <div class="side-skill-div"><div class="side-skill-div-css">&nbsp;</div></div>
+                <p class="side-skill-text">JavaScript</p>
+                <div class="side-skill-div"><div class="side-skill-div-js">&nbsp;</div></div>
+                <p class="side-skill-text">Vue.js</p>
+                <div class="side-skill-div"><div class="side-skill-div-vue">&nbsp;</div></div>
+                <p class="side-skill-text">PHP</p>
+                <div class="side-skill-div"><div class="side-skill-div-php">&nbsp;</div></div>
+                <div class="side-message-contact">
+                    <p class="glyphicon glyphicon-time"></p>
+                    <span class="side-message-contact-text">1999/3/26</span>
+                </div>
+                <div class="side-message-contact">
+                    <p class="glyphicon glyphicon-map-marker"></p>
+                    <span class="side-message-contact-text">湖南长沙</span>
+                </div>
+                <div class="side-message-contact">
+                    <p class="glyphicon glyphicon-time"></p>
+                    <span class="side-message-contact-text">湖南信息学院 | 软件技术</span>
+                </div>
+                <div class="side-message-contact">
+                    <p class=".glyphicon glyphicon-envelope"></p>
+                    <span class="side-message-contact-text">404115964@qq.com</span>
+                </div>
+                <div class="side-message-contact">
+                    <p class="glyphicon glyphicon-earphone"></p>
+                    <span class="side-message-contact-text">17673093740 (同微信)</span>
+                </div>
+            </div>
+        </aside>
+        <article class="center-div">
+            <div class="center-div-introduce">
+                <p class="center-div-introduce-title">项目经验</p>
+                <div class="center-div-introduce-project">
+                    <p class="center-div-introduce-project-title">blog系统</p>
+                    <p>
+                        服务器端基于<span class="span-major">php</span>，<span class="span-major">mysql</span>，
+                        <span class="span-major">Workworkerman</span>前端采用<span class="span-major">bootstrap</span>，
+                        <span class="span-major">vue</span>，<span class="span-major">Websocket</span>，
+                        实现登录/注册，Ajax在线聊天，
+                        图片点击放大，留言，后图管理文章，添加和删除好友等功能
+                    </p>
+                    <a target="_blank" href="https://github.com/YYXabc/blog3">Fork me on GitHub</a>
+                </div>
+                <div class="center-div-introduce-project">
+                    <p class="center-div-introduce-project-title">论坛系统</p>
+                    <p>
+                        服务器端基于<span class="span-major">php</span>，<span class="span-major">mysql</span>
+                        前端采用<span class="span-major">bootstrap</span>，<span class="span-major">flex</span>，
+                        <span class="span-major">vue</span>，<span class="span-major">ES6语法</span>，<span class="span-major">HTML5</span>，
+                        <span class="span-major">CSS3</span>等技术，
+                        实现登录/注册，发帖，回帖，功能，根据最后回帖时间就行排序等功能,
+                    </p>
+                    <a target="_blank" href="https://github.com/YYXabc/guaForum">Fork me on GitHub</a>
+                </div>
+                <div class="center-div-introduce-project-2">
+                    <p class="center-div-introduce-project-title">其他小项目源码</p>
+                    <a target="_blank" href="https://github.com/YYXabc/2048JS">原生JS2048</a>
+                    <a target="_blank" href="https://github.com/YYXabc/Calendar">原生JS日历插件</a>
+                    <a target="_blank" href="https://github.com/YYXabc/book_test">书籍管理系统</a>
+                </div>
+            </div>
+            <div class="center-div-introduce">
+                <p class="center-div-introduce-title">专业技能</p>
+                <div class="center-div-introduce-skill">
+                    <p>● 熟悉HTML5，CSS3和编写更加合理的 HTML 以及规范化的 CSS</p>
+                    <p>● 能熟练使用Vue.js，Jquery，Bootstrap对React等框架有了解，能根据公司需求快速上手,对webpack模块化打包工具也有不错的了解</p>
+                    <p>● 兴趣广泛略懂后端可以写点PHP。对Node.js也略有了解（缺少实战经验）</p>
+                    <p>● 对面向对象理解比较深刻，并对es6语法和对代码风格比较熟悉</p>
+                    <p>● 对响应式开发和一些浏览兼容有不错的了解</p>
+                    <p>● 对Git版本控制工具有使用经验，对WebStorm等IDE也比较熟练</p>
+                </div>
+            </div>
+            <div class="center-div-introduce">
+                <p class="center-div-introduce-title">自我评价</p>
+                <div class="center-div-introduce-project">
+                    学习能力较强,能快速适应公司技术栈。对技术热情比较高，性格比较开朗能与同事形成比较好的协调合作，
+                    能较快的融入到团队开发中去
+                </div>
+            </div>
+            <div class="center-div-thank">
+                <h2>致谢</h2>
+                <p>感谢您花时间阅读我的简历，期待能有机会和您共事。</p>
+            </div>
+        </article>
+    </div>
+    <script src="js/removeCenter.js"></script>
+</body>
+</html>

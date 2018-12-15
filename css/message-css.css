@@ -1,0 +1,152 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(0,192,180);
+}
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgb(37,70,101);
+}
+
+.container {
+    padding: 0;
+    box-shadow: 0 8px 15px #888888;
+    box-sizing: border-box;
+    border-radius: 50px;
+    overflow: auto;
+    position: relative;
+    width: 75%;
+    height: 1000px;
+    min-width: 302px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: white;
+}
+.introduction {
+    float: left;
+    margin-right: 20px;
+    box-sizing: border-box;
+    width: 20%;
+    height: 100%;
+    background-color: rgb(37,70,101);
+}
+.photo{
+    box-sizing: border-box;
+    margin-bottom: 50px;
+    padding-top: 20px;
+}
+.photo img{
+    display: block;
+    width: 125px;
+    height: 175px;
+    margin: auto;
+    padding-top: 20px;
+}
+.message {
+    margin-top: 20px;
+}
+.message ul {
+    margin-top: 20px;
+}
+.message li {
+    font-size: 110%;
+    margin-top: 10px;
+    list-style-type: none;
+    color: rgb(0,192,145);
+    font-weight: 900;
+}
+.message-user {
+    color: rgb(0,192,145);
+    font-size: 400%;
+    box-sizing: border-box;
+    width: 180px;
+    margin: auto;
+    margin-top: 75px;
+    margin-bottom: 10px;
+}
+.message-position {
+    color: rgb(0,192,145);
+    width: 220px;
+    margin: auto;
+}
+.message-skill {
+    margin-top: 75px;
+}
+.message-skill-text {
+    margin:0 40px;
+    margin-top: 20px;
+    color: rgb(154,154,154);
+
+}
+.message-skill-div {
+    color: red;
+    border-radius: 40px;
+    margin: 0 40px;
+    background-color: rgb(215,215,215);
+}
+.message-skill-div-html {
+    background-color: rgb(0,192,145);
+    width: 70%;
+    border-radius: 40px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    animation: html 2s;
+}
+.message-skill-div-css {
+    background-color: rgb(0,192,145);
+    width: 60%;
+    border-radius: 40px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    animation: css 2s;
+}
+.message-skill-div-js {
+    background-color: rgb(0,192,145);
+    width: 70%;
+    border-radius: 40px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    animation: js 2s;
+}
+.message-skill-div-vue {
+    background-color: rgb(0,192,145);
+    width: 50%;
+    border-radius: 40px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    animation: vue 2s;
+}
+.message-skill-div-php {
+    background-color: rgb(0,192,145);
+    width: 10%;
+    border-radius: 40px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    animation: php 2s;
+}
+.message-information {
+    margin-top: 75px;
+}
+.message-text {
+    margin-left: 30px;
+    color: white;
+}
+
+@keyframes html {
+    from {width: 0} to {width: 70%}
+}
+@keyframes css {
+    from {width: 0} to {width: 60%}
+}
+@keyframes js {
+    from {width: 0} to {width: 70%}
+}
+@keyframes vue {
+    from {width: 0} to {width: 50%}
+}
+@keyframes php {
+    from {width: 0} to {width: 30%}
+}
