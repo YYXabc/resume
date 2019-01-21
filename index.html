@@ -21,7 +21,7 @@
         .containers {
             display: flex;
             background-color: #ffffff;
-            min-width: 1000px;
+            min-width: 1200px;
             width: 70%;
             border-radius: 30px;
             margin: 0 auto;
@@ -35,7 +35,7 @@
             border-radius: 30px;
             border-bottom-right-radius: 0;
             border-top-right-radius: 0;
-            height: 1100px;
+            height: 1300px;
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
@@ -114,6 +114,14 @@
             border-bottom-right-radius: 0;
             animation: php 2s;
         }
+        .side-div .side-message .side-skill-div .side-skill-div-wx {
+            background-color: rgb(0,192,145);
+            width: 50%;
+            border-radius: 40px;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            animation: wx 2s;
+        }
         .side-div .side-message .side-message-contact {
             margin-top: 12px;
             display: flex;
@@ -134,7 +142,7 @@
         .center-div {
             width: 70%;
             padding: 2% 5% 2% 5%;
-            height: 1100px;
+            height: 1300px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -195,8 +203,6 @@
             border-top: 2px solid rgb(244,244,244);
             font-weight: 900;
         }
-
-
         @keyframes html {
             from {width: 0} to {width: 75%}
         }
@@ -212,14 +218,16 @@
         @keyframes php {
             from {width: 0} to {width: 50%}
         }
-
+        @keyframes wx {
+            from {width: 0} to {width: 50%}
+        }
 
     </style>
 </head>
 <body>
     <div class="containers">
         <aside class="side-div">
-            <img src="img/b.jpg" alt="">
+            <img src="img/a.jpg" alt="">
             <div class="side-message">
                 <h1>杨宇欣</h1>
                 <h3>Web前端开发工程师</h3>
@@ -233,6 +241,8 @@
                 <div class="side-skill-div"><div class="side-skill-div-vue">&nbsp;</div></div>
                 <p class="side-skill-text">PHP</p>
                 <div class="side-skill-div"><div class="side-skill-div-php">&nbsp;</div></div>
+                <p class="side-skill-text">微信小程序</p>
+                <div class="side-skill-div"><div class="side-skill-div-wx">&nbsp;</div></div>
                 <div class="side-message-contact">
                     <p class="glyphicon glyphicon-time"></p>
                     <span class="side-message-contact-text">1999/3/26</span>
@@ -259,26 +269,25 @@
             <div class="center-div-introduce">
                 <p class="center-div-introduce-title">项目经验</p>
                 <div class="center-div-introduce-project">
-                    <p class="center-div-introduce-project-title">blog系统</p>
+                    <p class="center-div-introduce-project-title">个人blog系统</p>
                     <p>
-                        服务器端基于<span class="span-major">php</span>，<span class="span-major">mysql</span>，
-                        <span class="span-major">Workworkerman</span>前端采用<span class="span-major">bootstrap</span>，
-                        <span class="span-major">vue</span>，<span class="span-major">Websocket</span>，
-                        实现登录/注册，Ajax在线聊天，
-                        图片点击放大，留言，后图管理文章，添加和删除好友等功能
+                        我在此项目负责前端css,vue组件的编写，已经服务端的开发。在项目开发的过程中遇到在线聊天需求时，起初利用"轮询"实现，但是实际效率比较低会造成资源浪费，最后通过websocket来实现服务器主动像客户端进行数据的推送，以此来减少要服务端发送请求的次数
                     </p>
                     <a target="_blank" href="https://github.com/YYXabc/blog3">Fork me on GitHub</a>
                 </div>
                 <div class="center-div-introduce-project">
-                    <p class="center-div-introduce-project-title">论坛系统</p>
+                    <p class="center-div-introduce-project-title">瓜论坛</p>
                     <p>
-                        服务器端基于<span class="span-major">php</span>，<span class="span-major">mysql</span>
-                        前端采用<span class="span-major">bootstrap</span>，<span class="span-major">flex</span>，
-                        <span class="span-major">vue</span>，<span class="span-major">ES6语法</span>，<span class="span-major">HTML5</span>，
-                        <span class="span-major">CSS3</span>等技术，
-                        实现登录/注册，发帖，回帖，功能，根据最后回帖时间就行排序等功能,
+                        本人在此项目负责了vue组件开发，css样式开发，服务端的php开发，数据库的设计，前端js代码的编写。在项目中采取利用flex实现自适应布局能兼容移动端浏览器，在注册页面逻辑编写时利用AJAX像服务端发送请求，并利用路由在前端进行数据渲染，减轻服务器端压力
                     </p>
                     <a target="_blank" href="https://github.com/YYXabc/guaForum">Fork me on GitHub</a>
+                </div>
+                <div class="center-div-introduce-project">
+                    <p class="center-div-introduce-project-title">微信小程序similar</p>
+                    <p>
+                        此项目是查看热门电影,最新上映电影,和搜索电影，唱片信息的微信小程序。我在此项目中了负责了小程序wxss样式的设计，wxml的开发，js代码的实现，服务器的搭建。在实现的过程中遇到图片加载不够快白屏问题，最后通过懒加载提升了页面的加载速度，有比较流畅运行速度。
+                    </p>
+                    <a target="_blank" href="https://github.com/YYXabc/similar">Fork me on GitHub</a>
                 </div>
                 <div class="center-div-introduce-project-2">
                     <p class="center-div-introduce-project-title">其他小项目源码</p>
@@ -292,6 +301,7 @@
                 <div class="center-div-introduce-skill">
                     <p>● 熟悉HTML5，CSS3和编写更加合理的 HTML 以及规范化的 CSS，能准确还原设计稿</p>
                     <p>● 能熟练使用Vue.js，Jquery，Bootstrap对React等框架有了解，能根据公司需求快速上手,会使用webpack</p>
+                    <p>● 可以初步开发微信小程序</p>
                     <p>● 兴趣广泛会点后端可以写点PHP。对Node.js也略有了解</p>
                     <p>● 对面向对象理解比较深刻，并对es6语法和对代码风格比较熟悉</p>
                     <p>● 对响应式开发和一些浏览兼容有不错的了解</p>
@@ -312,6 +322,5 @@
             </div>
         </article>
     </div>
-    <script src="js/removeCenter.js"></script>
 </body>
 </html>
